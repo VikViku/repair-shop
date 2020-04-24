@@ -1,0 +1,31 @@
+.apie-mus {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, [col-start] 500px [col-end]);
+    grid-gap: 1.5em 0.8em;
+    justify-content: center;
+    align-content: center;
+}
+.image {
+    border: 5px solid salmon;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+.content {
+    border: 5px dashed brown;
+    text-align: center;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .apie-mus {
+        grid-template-columns: repeat(auto-fill, [col-start] 1fr [col-end]);
+    }
+
+  }
