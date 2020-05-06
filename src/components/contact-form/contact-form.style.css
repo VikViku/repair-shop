@@ -1,0 +1,31 @@
+.kontaktai {
+    display: grid;
+    grid-gap: 0 3.8em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.kontaktaiImg {
+    grid-column: 1;
+    /* margin-left: 50px; */
+}
+
+.kontaktaiForm {
+    grid-column: 2;
+    width: 500px;
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .kontaktai {
+        display: grid;
+        grid-gap: 0 3.8em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .kontaktaiForm {
+        grid-column: 1;
+    }
+
+}
