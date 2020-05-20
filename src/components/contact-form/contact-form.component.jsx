@@ -9,8 +9,6 @@ import Button from 'react-bootstrap/Button';
 
 var imageStyle = {
     backgroundImage: `url(${Background})`,
-    backgroundSize: 'cover',
-    width: '800px'
 };
 
 class ContactForm extends React.Component {
@@ -30,12 +28,12 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className="kontaktai">
-                <div className="kontaktaiImg" style={imageStyle}></div>
+            <div className="kontaktai kontaktaiImg" style={imageStyle}>
                 <div className="kontaktaiForm">
-                    <span>Booking an Appointment</span>
+                    <span>Booking an Ap pointment</span>
                     <h2 className="mb-4">Free Consultation</h2>
                     <Form onSubmit={this.handleSubmit}>
+
                         <Form.Group controlId="exampleForm.SelectCustom">
                             <Form.Control as="select" custom value={this.state.selectValue} onChange={(e) => { this.setState({ selectValue: e.target.value }) }}>
                                 <option value='Select service' disabled>Select service</option>
@@ -66,14 +64,17 @@ class ContactForm extends React.Component {
                                 <Form.Control type="Time" />
                             </Form.Group>
                         </Form.Row>
+                        <Form.Row>
+                            <Form.Group as={Col} controlId="formMessage">
+                                <Form.Control as="textarea" rows="5" placeholder="Message" />
+                            </Form.Group>
+                        </Form.Row>
 
-                        <Form.Group as={Col} controlId="formMessage">
-                            <Form.Control type="textarea" placeholder="Message" />
-                        </Form.Group>
-
-                        <Button variant="primary" size="lg" block>
-                            Send message
+                        <Form.Row>
+                            <Button variant="primary" size="lg" block>
+                                Send message
                         </Button>
+                        </Form.Row>
                     </Form>
 
                 </div>

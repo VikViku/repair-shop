@@ -1751,79 +1751,6 @@ h1, h2, h3, h4, h5,
     .ftco-counter .counter-wrap {
       margin-bottom: 20px; } }
 
-.ftco-appointment {
-  background-position: center center !important;
-  position: relative; }
-  .ftco-appointment .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    content: '';
-    opacity: 1;
-    background: #f79f24; }
-    @media (min-width: 992px) {
-      .ftco-appointment .overlay {
-        width: 50%; } }
-    @media (max-width: 991.98px) {
-      .ftco-appointment .overlay {
-        opacity: .8; } }
-  .ftco-appointment .half {
-    width: 100%; }
-    .ftco-appointment .half h2 {
-      font-weight: 600; }
-
-.appointment .form-group {
-  position: relative;
-  width: 100%;
-  display: block; }
-  .appointment .form-group .icon {
-    position: absolute;
-    top: 50% !important;
-    right: 15px;
-    font-size: 16px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    .appointment .form-group .icon span {
-      font-size: 14px;
-      color: rgba(0, 0, 0, 0.5) !important; }
-  .appointment .form-group .select-wrap, .appointment .form-group .input-wrap {
-    position: relative; }
-    .appointment .form-group .select-wrap select, .appointment .form-group .input-wrap select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none; }
-  .appointment .form-group .btn {
-    width: 100%;
-    display: block !important; }
-
-.appointment .form-control {
-  border: transparent;
-  background: #fff !important;
-  color: rgba(0, 0, 0, 0.8) !important;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 5px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important; }
-  .appointment .form-control::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: rgba(0, 0, 0, 0.5); }
-  .appointment .form-control::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(0, 0, 0, 0.5); }
-  .appointment .form-control:-ms-input-placeholder {
-    /* IE 10+ */
-    color: rgba(0, 0, 0, 0.5); }
-  .appointment .form-control:-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(0, 0, 0, 0.5); }
-
-.appointment textarea.form-control {
-  height: inherit !important; }
-
 .work {
   display: block;
   width: 100%;
@@ -1899,7 +1826,7 @@ h1, h2, h3, h4, h5,
     display: inline-block; }
 
 .form-control {
-  height: 52px !important;
+  // height: 52px !important;
   background: #fff !important;
   color: #000000 !important;
   font-size: 14px;
@@ -1908,24 +1835,6 @@ h1, h2, h3, h4, h5,
   box-shadow: none !important; }
   .form-control:focus, .form-control:active {
     border-color: #000000; }
-
-textarea.form-control {
-  height: inherit !important; }
-
-.ftco-vh-100 {
-  height: 100vh; }
-  @media (max-width: 1199.98px) {
-    .ftco-vh-100 {
-      height: inherit;
-      padding-top: 5em;
-      padding-bottom: 5em; } }
-
-.ftco-animate {
-  opacity: 0;
-  visibility: hidden; }
-
-.about-author .desc h3 {
-  font-size: 24px; }
 
 .ftco-section {
   padding: 7em 0;
@@ -1936,12 +1845,6 @@ textarea.form-control {
 
 .ftco-bg-dark {
   background: #3c312e; }
-
-.ftco-no-pt {
-  padding-top: 0 !important; }
-
-.ftco-no-pb {
-  padding-bottom: 0 !important; }
 
 .footer {
   overflow: hidden;

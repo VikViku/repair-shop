@@ -3,16 +3,24 @@
     grid-gap: 0 3.8em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    position: relative;
+    height: 500px;
 }
 
 .kontaktaiImg {
-    grid-column: 1;
-    /* margin-left: 50px; */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f79f24;
 }
 
 .kontaktaiForm {
     grid-column: 2;
-    width: 500px;
+    width: 100%;
+    padding: 20px 15px 20px 15px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -24,8 +32,10 @@
         grid-template-rows: 1fr 1fr;
 
     }
+
     .kontaktaiForm {
         grid-column: 1;
+        margin: 0 auto;
+        width: 80%;
     }
-
 }
