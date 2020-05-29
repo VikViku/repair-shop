@@ -1,3 +1,11 @@
+.sekcija {
+    text-align: center;
+}
+.header {
+    font-size: 24px;
+font-weight: 700;
+
+}
 .paslaugos {
     display: grid;
     grid-template-columns: repeat(3, [col-start] 350px [col-end]);
@@ -9,7 +17,7 @@
 .item {
     width: 350px;
     height: auto;
-    background-color: indianred;
+    /* background-color: indianred; */
     text-align: center;
     padding: 5px;
 }

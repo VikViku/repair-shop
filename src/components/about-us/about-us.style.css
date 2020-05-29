@@ -32,7 +32,7 @@ input.active {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1279px) {
     .apie-mus {
          grid-template-columns: 500px;
     }

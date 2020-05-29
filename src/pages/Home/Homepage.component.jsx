@@ -19,8 +19,8 @@ const HomePage = () => (
             <section>
                 <AboutUs />
             </section>
-            <section className="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
-                <div className="ftco-counter"></div>
+            <section>
+                <div className="counter"></div>
                 <ContactForm />
             </section>
         </main>

@@ -10,7 +10,6 @@ import Button from 'react-bootstrap/Button';
 var imageStyle = {
     backgroundImage: `url(${Background})`,
     backgroundSize: 'cover',
-    width: '800px'
 };
 
 class ContactForm extends React.Component {

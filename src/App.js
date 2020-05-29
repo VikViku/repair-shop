@@ -11,7 +11,7 @@ const App = () => (
       <NavMenu />
     </nav>
     <HomePage />
-    <footer>
+    <footer className="footer">
       Copyright
     </footer>
   </div>
