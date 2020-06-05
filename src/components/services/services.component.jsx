@@ -1,48 +1,84 @@
 import React from 'react';
 
-import './services.style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import './services.style.scss';
 
 const Services = () => (
     <div className="sekcija">
-        <h2>Mes teikiame paslaugas:</h2>
+        <h3 className="heading">Teikiame remonto paslaugas:</h3>
 
         <div className="paslaugos">
 
             <div className="item">
-                <h5>Stambi buitinė technika</h5>
-                <p> Šaldytuvai<br />
-                Šaldikliai<br />
-                Skalbimo mašinos
-            </p>
-            </div>
-            <div className="item">
-                <h5>Garantinis</h5>
-                <p>Detailesnė informacija</p>
-            </div>
-            <div className="item">
-                <h5>Miestai</h5>
-                <p>Marijampolė<br />
-            Kalvarija</p>
-            </div>
-            <div className="item">
-                <h5>Smulki buitinė technika</h5>
-                <p> Kavamalės<br />
-            Dulkių siurbliai<br />
-            Mikseriai</p>
-            </div>
-            <div className="item">
-                <h5>Pogarantinis</h5>
-                <p>Detailesnė informacija</p>
+                <div className="ikona">
+                    <FontAwesomeIcon icon="layer-group" />
+                </div>
+                <div className="aprasymas">
+                    <h5>Stambios buitinės technikos</h5>
+                    <p> Šaldytuvai<br />
+                    Šaldikliai<br />
+                    Skalbimo mašinos
+                    </p>
+                </div>
             </div>
 
             <div className="item">
-                <h5>Rajonai</h5>
-                <p>Želsva.<br />
-            30km apie Marijampolę.
-            </p>
-
+                <div className="ikona">
+                    <FontAwesomeIcon icon="tools" />
+                </div>
+                <div className="aprasymas">
+                    <h5>Garantinio</h5>
+                    <p>Detailesnė informacija</p>
+                </div>
             </div>
 
+            <div className="item">
+                <div className="ikona">
+                    <FontAwesomeIcon icon="city" />
+                </div>
+                <div className="aprasymas">
+                    <h5>Mieste</h5>
+                    <p>Marijampolė<br />
+                    Kalvarija
+                    </p>
+                </div>
+            </div>
+
+            <div className="item">
+                <div className="ikona">
+                    <FontAwesomeIcon icon="blender" />
+                </div>
+                <div className="aprasymas">
+                    <h5>Smulkios buitinės technikos</h5>
+                    <p> Kavamalės<br />
+                    Dulkių siurbliai<br />
+                    Mikseriai</p>
+                </div>
+            </div>
+
+            <div className="item">
+                <div className="ikona">
+                    <FontAwesomeIcon icon="hammer" />
+                </div>
+                <div className="aprasymas">
+                    <h5>Pogarantinio</h5>
+                    <p>Detailesnė informacija</p>
+                </div>
+            </div>
+
+
+            <div className="item">
+                <div className="ikona">
+                    <FontAwesomeIcon icon="home" />
+                </div>
+                <div className="aprasymas">
+                    <h5>Rajone</h5>
+                    <p>Želsva.<br />
+                    30km apie Marijampolę.
+                    </p>
+                </div>
+            </div>
 
         </div>
     </div>

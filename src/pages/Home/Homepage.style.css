@@ -1,4 +1,9 @@
 section {
-    background-color: whitesmoke;
+    background-color: #fff;
     margin-bottom: 25px;
+    position: relative;
 }
+
+.no-gap {
+    margin-bottom: 0;
+  }

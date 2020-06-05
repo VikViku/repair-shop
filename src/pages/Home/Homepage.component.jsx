@@ -13,14 +13,15 @@ const HomePage = () => (
             <section>
                 <NewsCarousel />
             </section>
-            <section>
+            <section id="services">
                 <Services />
             </section>
-            <section>
+            <section id="about">
                 <AboutUs />
             </section>
-            <section>
+            <section id="contacts" className="no-gap">
                 <div className="counter"></div>
+                <div className="ftco-counter"></div>
                 <ContactForm />
             </section>
         </main>

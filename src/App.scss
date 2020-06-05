@@ -848,6 +848,16 @@ h1, h2, h3, h4, h5,
 .bg-light {
   background: #f8f9fd !important; }
 
+.btn-dark {
+  color: #fff!important;
+  background: #343a40 !important;
+  border-color: #343a40 !important;
+}
+
+.btn-dark:hover {
+  background: #252525 !important;
+}
+
 .bg-secondary {
   background: #064acb !important; }
 
@@ -915,8 +925,120 @@ h1, h2, h3, h4, h5,
         background: #064acb;
         color: #fff; }
 
+#section-counter {
+  position: relative;
+  z-index: 0; }
+
+.ftco-counter {
+  overflow-x: hidden;
+  position: relative;
+  padding: 4em 0;
+  background: #202020; }
+  @media (max-width: 1199.98px) {
+    .ftco-counter {
+      background-position: center center !important; } }
+  .ftco-counter .block-18 {
+    display: block;
+    width: 100%; }
+    @media (max-width: 991.98px) {
+      .ftco-counter .block-18 {
+        margin-bottom: 2em; } }
+  .ftco-counter .text {
+    position: relative; }
+    @media (max-width: 767.98px) {
+      .ftco-counter .text {
+        width: 100%; } }
+    .ftco-counter .text .number {
+      line-height: 1;
+      font-weight: 700;
+      font-size: 38px;
+      color: #f79f24;
+      display: block;
+      margin-bottom: 10px; }
+    .ftco-counter .text span {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.7); }
+  @media (max-width: 767.98px) {
+    .ftco-counter .counter-wrap {
+      margin-bottom: 20px; } }
+
+.work {
+  display: block;
+  width: 100%;
+  height: 270px;
+  margin-bottom: 0;
+  background-position: top center !important;
+  z-index: 0;
+  position: relative; }
+  .work:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #064acb;
+    opacity: 0;
+    z-index: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .work .text {
+    opacity: 0; }
+    .work .text span {
+      color: rgba(255, 255, 255, 0.5); }
+  .work h2 {
+    color: #fff;
+    line-height: 1.2;
+    font-size: 18px; }
+    .work h2 a {
+      color: #fff; }
+  .work .desc {
+    z-index: 1; }
+  .work .icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 70px;
+    height: 70px;
+    content: '';
+    z-index: 1;
+    background: #f79f24;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    margin-top: -70px;
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .work .icon span {
+      color: #fff; }
+  .work:hover:after {
+    opacity: 1; }
+  .work:hover .icon {
+    opacity: 1; }
+  .work:hover .text {
+    opacity: 1; }
+
+.ftco-social {
+  padding: 0; }
+  .ftco-social li {
+    list-style: none;
+    margin-right: 10px;
+    display: inline-block; }
+
 .form-control {
-  height: 52px !important;
+  // height: 52px !important;
   background: #fff !important;
   color: #000000 !important;
   font-size: 14px;
@@ -926,65 +1048,17 @@ h1, h2, h3, h4, h5,
   .form-control:focus, .form-control:active {
     border-color: #000000; }
 
-textarea.form-control {
-  height: inherit !important; }
+.ftco-section {
+  padding: 7em 0;
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .ftco-section {
+      padding: 6em 0; } }
 
-  .counter {
-    overflow-x: hidden;
-    position: relative;
-    padding: 4em 0;
-    background: #202020; }
-    @media (max-width: 1199.98px) {
-      .counter {
-        background-position: center center !important; } }
-    .counter .text {
-      position: relative; }
-      @media (max-width: 767.98px) {
-        .counter .text {
-          width: 100%; } }
-      .counter .text .number {
-        line-height: 1;
-        font-weight: 700;
-        font-size: 38px;
-        color: #f79f24;
-        display: block;
-        margin-bottom: 10px; }
-      .counter .text span {
-        text-transform: uppercase;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 0.7); }
+.ftco-bg-dark {
+  background: #3c312e; }
 
-.footer {
-  overflow: hidden;
-  background: #252525; }
-  .footer .logo {
-    font-size: 24px !important;
-    font-weight: 700 !important;
-    line-height: 1; }
-    .footer .logo a {
-      color: #fff; }
-      .footer .logo a span {
-        color: #f79f24; }
-  .footer .ftco-footer-widget h2 {
-    font-weight: normal;
-    color: #fff;
-    margin-bottom: 40px;
-    font-size: 20px;
-    font-weight: 600; }
-  .footer .ftco-footer-widget ul li a {
-    color: #fff; }
-    .footer .ftco-footer-widget ul li a span {
-      color: #fff; }
-    .footer .ftco-footer-widget ul li a:hover {
-      color: #f79f24; }
-      .footer .ftco-footer-widget ul li a:hover span {
-        color: #f79f24; }
-  .footer .ftco-footer-widget .btn-primary {
-    background: #fff !important;
-    border: 2px solid #fff !important; }
-    .footer .ftco-footer-widget .btn-primary:hover {
-      background: #fff;
-      border: 2px solid #fff !important; }
+
   .footer p {
     color: rgba(255, 255, 255, 0.7); }
   .footer a {
@@ -998,33 +1072,3 @@ textarea.form-control {
     font-weight: 700; }
   .footer .opening-hours p span {
     color: rgba(255, 255, 255, 0.9); }
-
-.ftco-footer-social li {
-  list-style: none;
-  margin: 0 10px 0 0;
-  display: inline-block; }
-  .ftco-footer-social li a {
-    height: 40px;
-    width: 40px;
-    display: block;
-    float: left;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    position: relative; }
-    .ftco-footer-social li a span {
-      position: absolute;
-      font-size: 20px;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-    .ftco-footer-social li a:hover {
-      color: #fff; }
-
-.footer-small-nav > li {
-  display: inline-block; }
-  .footer-small-nav > li a {
-    margin: 0 10px 10px 0; }
-    .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
-      color: #f79f24; }

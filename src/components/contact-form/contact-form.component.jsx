@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 var imageStyle = {
     backgroundImage: `url(${Background})`,
     backgroundSize: 'cover',
+
 };
 
 class ContactForm extends React.Component {
@@ -32,14 +33,15 @@ class ContactForm extends React.Component {
             <div className="kontaktai">
                 <div className="kontaktaiImg" style={imageStyle}></div>
                 <div className="kontaktaiForm">
-                    <span>Booking an Appointment</span>
-                    <h2 className="mb-4">Free Consultation</h2>
+                    <span>Užsirezervuokite laiką</span>
+                    <h3>konsultacijai</h3>
                     <Form onSubmit={this.handleSubmit}>
+
                         <Form.Group controlId="exampleForm.SelectCustom">
                             <Form.Control as="select" custom value={this.state.selectValue} onChange={(e) => { this.setState({ selectValue: e.target.value }) }}>
-                                <option value='Select service' disabled>Select service</option>
-                                <option value='1'>1</option>
-                                <option value='2'>2</option>
+                                <option value='Select service' disabled>Rinktis paslaugą</option>
+                                <option value='1'>Konsultacija</option>
+                                <option value='2'>Taisymas</option>
                                 <option value='3'>3</option>
                                 <option value='4'>4</option>
                                 <option value='5'>5</option>
@@ -48,11 +50,11 @@ class ContactForm extends React.Component {
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="formName">
-                                <Form.Control type="text" placeholder="Your Name" />
+                                <Form.Control type="text" placeholder="Vardas" />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formVehicleNo">
-                                <Form.Control type="text" placeholder="Vehicle number" />
+                                <Form.Control type="text" placeholder="Vieta" />
                             </Form.Group>
                         </Form.Row>
 
@@ -65,13 +67,13 @@ class ContactForm extends React.Component {
                                 <Form.Control type="Time" />
                             </Form.Group>
                         </Form.Row>
-
-                        <Form.Group as={Col} controlId="formMessage">
-                            <Form.Control type="textarea" placeholder="Message" />
-                        </Form.Group>
-
-                        <Button variant="primary" size="lg" block>
-                            Send message
+                        <Form.Row>
+                            <Form.Group as={Col} controlId="formMessage">
+                                <Form.Control as="textarea" rows="5" placeholder="Žinutė" />
+                            </Form.Group>
+                        </Form.Row>
+                        <Button className="btn-dark" variant="primary" type="submit" block>
+                            Siųsti užsakymą
                         </Button>
                     </Form>
 
